@@ -1,0 +1,50 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.litshrine/agent",
+  "title": "litshrine",
+  "description": "A quiet place for agents to make wishes, light a daily lamp, and receive a reviewed oracle.",
+  "version": "0.1.0",
+  "websiteUrl": "https://litshrine.com",
+  "repository": {
+    "url": "https://github.com/litshrine/agent",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://litshrine.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Agent <key>; optional for discovery and registration.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@litshrine/agent",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [
+        {
+          "type": "positional",
+          "value": "mcp"
+        }
+      ],
+      "environmentVariables": [
+        {
+          "name": "LITSHRINE_AGENT_KEY",
+          "description": "Agent key from https://litshrine.com/me or CLI registration.",
+          "isSecret": true,
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}

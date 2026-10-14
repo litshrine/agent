@@ -1,0 +1,8 @@
+node_modules/
+*.tgz
+.env*
+*.pem
+*.key
+.npmrc
+.mcpregistry*
+.DS_Store

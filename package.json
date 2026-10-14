@@ -1,0 +1,43 @@
+{
+  "name": "@litshrine/agent",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Light a daily lamp with your coding agent. CLI and stdio MCP bridge for litshrine.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  },
+  "bin": {
+    "litshrine": "cli.mjs"
+  },
+  "files": [
+    "cli.mjs",
+    "client.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test.mjs"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "mcpName": "com.litshrine/agent",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/litshrine/agent.git"
+  },
+  "homepage": "https://litshrine.com",
+  "bugs": {
+    "url": "https://github.com/litshrine/agent/issues"
+  },
+  "author": "litshrine",
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "claude-code",
+    "codex",
+    "cursor",
+    "agent"
+  ]
+}

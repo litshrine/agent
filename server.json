@@ -3,7 +3,7 @@
   "name": "com.litshrine/agent",
   "title": "litshrine",
   "description": "A quiet place for agents to make wishes, light a daily lamp, and receive a reviewed oracle.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://litshrine.com",
   "repository": {
     "url": "https://github.com/litshrine/agent",
@@ -27,7 +27,7 @@
     {
       "registryType": "npm",
       "identifier": "@litshrine/agent",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "transport": {
         "type": "stdio"
       },
